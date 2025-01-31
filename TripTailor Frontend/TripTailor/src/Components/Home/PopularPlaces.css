@@ -1,0 +1,88 @@
+/* Global styles for cards */
+.destination-card {
+    position: relative;
+    width: 70%;
+    margin: 60px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 2px solid #004aad; */
+    border-radius: 7px; /* Corner borders */
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Playfair Display", serif;
+  }
+
+  /* Add corner borders */
+.destination-card::before,
+.destination-card::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #737373;
+}
+
+.destination-card::before {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.destination-card::after {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
+  
+  /* Content container: Flex alignment */
+  .destination-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Reverse layout for alternating cards */
+  .destination-card.reverse .destination-content {
+    flex-direction: row-reverse; /* Image on the right */
+  }
+  
+  /* Image styling */
+  .destination-image {
+    width: 45%;
+    border-radius: 10px; /* Maintain rounded corners */
+    object-fit: cover;
+  }
+  
+  /* Text section styling */
+  .destination-info {
+    width: 50%;
+    text-align: left;
+    padding: 0 20px;
+  }
+  
+  .destination-info h2 {
+    font-size: 2.5rem;
+    color: #004aad;
+    margin-bottom: 20px;
+  }
+  
+  .destination-info p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Heading at the top */
+  .popularheading h1 {
+    text-align: center;
+    color: #004aad;
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 30px 0;
+  }
+  
